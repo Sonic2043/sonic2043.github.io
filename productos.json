@@ -1,0 +1,59 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Taladro Percutor Inalámbrico 20V",
+      "categoria": "herramientas",
+      "precio": 85000,
+      "descripcion": "Incluye 2 baterías de litio, cargador rápido y maletín de transporte.",
+      "imagen": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=500&q=80",
+      "ventas": 12
+    },
+    {
+      "id": 2,
+      "nombre": "Auriculares Bluetooth Noise Cancelling",
+      "categoria": "tecnologia",
+      "precio": 42500,
+      "descripcion": "Batería de 30 horas, sonido envolvente y micrófono integrado.",
+      "imagen": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80",
+      "ventas": 25
+    },
+    {
+      "id": 3,
+      "nombre": "Set de Ollas Antiadherentes 5 Piezas",
+      "categoria": "bazar",
+      "precio": 64000,
+      "descripcion": "Aluminio forjado con recubrimiento cerámico y tapas de vidrio templado.",
+      "imagen": "https://images.unsplash.com/photo-1584990347449-a2d4c2c044c9?auto=format&fit=crop&w=500&q=80",
+      "ventas": 8
+    },
+    {
+      "id": 4,
+      "nombre": "Campera Rompevientos Deportiva",
+      "categoria": "indumentaria",
+      "precio": 38900,
+      "descripcion": "Tela impermeable respirable, ideal para entrenamiento y uso diario.",
+      "imagen": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&q=80",
+      "ventas": 15
+    },
+    {
+      "id": 5,
+      "nombre": "Kit Escolar y Oficina Completo",
+      "categoria": "utiles",
+      "precio": 18500,
+      "descripcion": "Cuadernos tapa dura, resaltadores pastel, bolígrafos y organizador.",
+      "imagen": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=500&q=80",
+      "ventas": 30
+    },
+    {
+      "id": 6,
+      "nombre": "Smartwatch Deportivo Sumergible",
+      "categoria": "tecnologia",
+      "precio": 51000,
+      "descripcion": "Monitor cardíaco, GPS integrado y notificaciones inteligentes.",
+      "imagen": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80",
+      "ventas": 19
+    }
+  ],
+  "historial_compras": []
+}

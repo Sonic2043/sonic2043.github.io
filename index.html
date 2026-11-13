@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onix Store - Tu Tienda Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>ONIX<span>STORE</span></h1>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" id="buscador" placeholder="Buscar productos, marcas y más...">
+                <button onclick="filtrarPorTexto()">🔍</button>
+            </div>
+
+            <button class="cart-btn" onclick="toggleCarrito()">
+                🛒 Carrito <span id="contador-carrito" class="badge">0</span>
+            </button>
+        </div>
+
+        <!-- Menú de Categorías -->
+        <nav class="categories-menu">
+            <button class="cat-btn active" onclick="filtrarCategoria('todos')">Todas las Categorías</button>
+            <button class="cat-btn" onclick="filtrarCategoria('tecnologia')">Tecnología</button>
+            <button class="cat-btn" onclick="filtrarCategoria('herramientas')">Herramientas</button>
+            <button class="cat-btn" onclick="filtrarCategoria('bazar')">Bazar</button>
+            <button class="cat-btn" onclick="filtrarCategoria('indumentaria')">Ropa e Indumentaria</button>
+            <button class="cat-btn" onclick="filtrarCategoria('utiles')">Útiles</button>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h2>Ofertas Destacadas de la Semana</h2>
+            <p>Envíos rápidos y compras 100% seguras. Elegí tus productos favoritos.</p>
+        </div>
+    </section>
+
+    <!-- Contenedor Principal de Productos -->
+    <main class="main-container">
+        <h3 id="titulo-categoria" class="section-title">Todos los Productos</h3>
+        <div id="grid-productos" class="products-grid">
+            <!-- Los productos se cargan dinámicamente aquí -->
+        </div>
+    </main>
+
+    <!-- Menú Lateral del Carrito (Drawer) -->
+    <div id="overlay" class="overlay" onclick="toggleCarrito()"></div>
+    <aside id="carrito-drawer" class="cart-drawer">
+        <div class="cart-header">
+            <h3>Tu Carrito de Compras</h3>
+            <button class="close-btn" onclick="toggleCarrito()">✕</button>
+        </div>
+
+        <div id="lista-carrito" class="cart-items">
+            <p class="empty-msg">Tu carrito está vacío.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total-row">
+                <span>Total a pagar:</span>
+                <span id="total-carrito">$0</span>
+            </div>
+
+            <button class="btn-checkout" onclick="mostrarOpcionesPago()">
+                Finalizar y Comprar
+            </button>
+
+            <!-- Opciones de Pago ocultas hasta tocar Finalizar -->
+            <div id="opciones-pago" class="payment-options hidden">
+                <p class="payment-title">Elegí cómo querés finalizar:</p>
+                <button class="btn-mp" onclick="procesarCompra('mercadopago')">
+                    💳 Pagar con Mercado Pago
+                </button>
+                <button class="btn-wsp" onclick="procesarCompra('whatsapp')">
+                    📱 Enviar pedido por WhatsApp
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Notificación flotante -->
+    <div id="toast" class="toast">Producto agregado al carrito</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
